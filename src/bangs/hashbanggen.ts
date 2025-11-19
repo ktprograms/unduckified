@@ -88,5 +88,5 @@ rawBangs.forEach((bang: any) => {
 
 Bun.write(
 	"./src/bangs/hashbang.ts",
-	`export const bangs: {[key: string]: ({c?:string, d: string, r: number, s:string, sc?: string, t: string, u: string })} = ${JSON.stringify(hashbang)};`,
+	`export const bangs: {[key: string]: ({c?: string, sc?: string, d: string, ad?: string, r: number, s: string, t: string, ts?: string[], u: string, x?: string, fmt?: string[], skip_tests?: boolean})} = ${JSON.stringify(hashbang)};`,
 );
